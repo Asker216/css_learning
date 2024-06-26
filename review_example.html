@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>综合性HTML页面</title>
+    <link rel="stylesheet" href="public.css">
+</head>
+
+<body>
+    <header>
+        <h1>我的综合性HTML页面</h1>
+        <nav>
+            <ul>
+                <li><a href="#section1">部分1：标题与段落</a></li>
+                <li><a href="#section2">部分2：列表</a></li>
+                <li><a href="#section3">部分3：链接、图像和表格</a></li>
+                <li><a href="#section4">部分4：表单</a></li>
+            </ul>
+        </nav>
+        <hr color="green" size="5px">
+    </header>
+    <main>
+        <section id="section1">
+            <h2>部分1：标题与段落</h2>
+            <p>这是一个段落。它包含了一些示例文本。<br><span>这是最普遍应用的文本标签span</span><br><mark>这是标记的文本</mark><br><small>这是小号的文本</small><br><del>这是带有删除线的文本</del><br>
+                <ins>这是插入的文本</ins><br><span>注释<sup>这是上标文本</sup></span><br><span>注释<sub>这是下标文本</sub></span>
+            </p>
+            <p>这是另一个段落，使用了<strong>加重语气</strong><b>b强调</b>和<i>i文本</i><em>斜体</em>文本。</p>
+            <span>行内样式（内联选择器）1000＞ID选择器100＞类选择器10＞元素选择器1</span>
+        </section>
+        <section id="section2">
+            <h2 class="title">部分2：列表</h2>
+            <h3>无序列表</h3>
+            <ul type="circle">
+                <li>蔬菜</li>
+                <li>水果</li>
+                <ul type="disc">
+                    <li>苹果</li>
+                    <li>香蕉</li>
+                    <li>桃子</li>
+                </ul>
+                <li>肉类</li>
+                <ul type="square">
+                    <li>牛肉</li>
+                    <li>鱼肉</li>
+                    <li>鸡肉</li>
+                    <li>猪肉</li>
+                </ul>
+            </ul>
+            <h3>有序列表</h3>
+            <ol type="I">
+                <li>第一步</li>
+                <li>第二步</li>
+                <li>第三步</li>
+            </ol>
+        </section>
+        <section id="section3">
+            <h2 class="title" id="title">部分3：链接、图像和表格</h2>
+            <p>点击一下链接访问<a href="https://www.apple.com" target="_blank">苹果网站</a></p>
+            <a href="./phone.html">手机商城</a>
+            <p style="color: red;font-size: 30px;">这是我的亲亲老婆：</p>
+            <img src="../laopo.jpg" alt="laopo" title="laopo" width="300px"><br><br>
+            <p>这是一个表格：</p>
+            <table border="1" width="400" height="200">
+                <tr>
+                    <th>姓名</th>
+                    <th>年龄</th>
+                    <th>城市</th>
+                </tr>
+                <tr>
+                    <td align="center">张三</td>
+                    <td align="center">25</td>
+                    <td align="center">北京</td>
+                </tr>
+                <tr>
+                    <td align="center">李四</td>
+                    <td align="center" class="year size">38</td>
+                    <td align="center">上海</td>
+                </tr>
+            </table>
+        </section>
+        <section id="section4">
+            <h2>部分4：表单</h2>
+            <form action="/submit" method="post">
+                <label for="name">姓：</label>
+                <input type="text" id="lastname" name="lastname">
+                <br>
+                <label for="name">名：</label>
+                <input type="text" id="firstname" name="firstname">
+                <br><br>
+
+                <label for="password">密码：</label>
+                <input type="password" name="password" id="password"><br><br>
+
+                <label for="gender">性别：</label>
+                <input type="radio" id="male" name="gender" value="male">男
+                <input type="radio" name="gender" id="female" value="female">女<br><br>
+
+                <label for="hobbies">爱好：</label>
+                <input type="checkbox" id="sports" name="hobbies" value="sports">运动
+                <input type="checkbox" name="hobbies" id="reading" value="reading">阅读<br><br>
+
+                <label for="city">城市：</label>
+                <select id="city" name="city">
+                    <option value="beijing">北京</option>
+                    <option value="shagnhai">上海</option>
+                    <option value="guangzhou">广州</option>
+                </select><br><br>
+
+                <label for="comments">评论：</label>
+                <textarea name="comments" name="comments"></textarea><br><br>
+
+                <input type="submit" value="实名提交">
+                <button>匿名提交</button>
+            </form>
+        </section>
+    </main>
+    <aside>
+        <h2>相关内容</h2>
+        <p>这是侧边栏内容</p>
+    </aside>
+    <footer>
+        <p>&copy;2024 aki.版权所有.</div>
+        </p>
+    </footer>
+</body>
+
+</html>
